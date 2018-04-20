@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book_mark.title %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @book_mark.url %>
+</p>
+
+<%= link_to 'Edit', edit_book_mark_path(@book_mark) %> |
+<%= link_to 'Back', book_marks_path %>
