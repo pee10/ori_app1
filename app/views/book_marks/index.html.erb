@@ -15,7 +15,7 @@
     <% @book_marks.each do |book_mark| %>
       <tr>
         <td><%= book_mark.title %></td>
-        <td><%= book_mark.url %></td>
+        <td><%= link_to book_mark.url,  book_mark.url, :target=>["_blank"] %></td>
         <td><%= link_to 'Show', book_mark %></td>
         <td><%= link_to 'Edit', edit_book_mark_path(book_mark) %></td>
         <td><%= link_to 'Destroy', book_mark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
