@@ -1,7 +1,14 @@
 <% provide(:title, 'Edit') %>
-<h1>Editing Book Mark</h1>
 
-<%= render 'form', book_mark: @book_mark %>
-
-<%= link_to 'Show', @book_mark %> |
-<%= link_to 'Back', book_marks_path %>
+<div id="main_panel">
+  <div id="table_panel">
+    
+    <h1>Editing Book Mark</h1>
+    
+    <%= render 'form', book_mark: @book_mark %>
+    
+    <%= link_to 'Show', @book_mark %> |
+    <%= link_to 'Back', book_marks_path %>
+    
+  </div>
+</div>

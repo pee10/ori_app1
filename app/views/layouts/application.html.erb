@@ -9,6 +9,23 @@
   </head>
 
   <body>
+    <header>
+      <div id="header">
+      <div id="headerArea">
+        <%= link_to "Book Marks", '#', id:"header_logo" %>
+        
+        <div id="gnavi">
+          <nav>
+            <ul>
+              <li><%= link_to "Home",    '#' %></li>
+              <li><%= link_to "Help",    '#' %></li>
+              <li><%= link_to "Sign in", '#' %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
