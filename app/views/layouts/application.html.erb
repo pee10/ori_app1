@@ -12,17 +12,18 @@
     <header>
       <div id="header">
       <div id="headerArea">
-        <%= link_to "Book Marks", '#', id:"header_logo" %>
+        <%= link_to "Book Marks", book_marks_path, id:"header_logo" %>
         
         <div id="gnavi">
           <nav>
             <ul>
-              <li><%= link_to "Home",    '#' %></li>
-              <li><%= link_to "Help",    '#' %></li>
-              <li><%= link_to "Sign in", '#' %></li>
+              <li><%= link_to "Home", book_marks_path, id:"link" %></li>
+              <li><%= link_to "Help",    '#', id:"link" %></li>
+              <li><%= link_to "Sign in", '#', id:"link" %></li>
             </ul>
           </nav>
         </div>
+        
       </div>
       </div>
     </header>

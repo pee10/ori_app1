@@ -24,14 +24,19 @@ pre {
 
 a {
   color: #000;
-
+  
+  &:link {
+    text-decoration: none;
+  }
+  
   &:visited {
     color: #666;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #00F;
+    text-decoration: underline; /* テキストに下線が表示されないように設定 */
+    background: rgba(0, 0, 255, 0);
   }
 }
 
@@ -89,7 +94,9 @@ label {
  /* ヘッダー */
 #header {
    position: fixed; /* 画面をスクロールしてもヘッダーを常に上部固定 */
-   width: 94%; /* 横幅を 設定 */
+   top: 0;
+   left: 0;
+   width: 100%; /* 横幅を 設定 */
    height: 46px; /* ヘッダーの高さを設定 */
    background-color: rgba(255, 255, 255, 0.5); /* 背景色の設定 */
    border-bottom: solid 1px #EEE; /* ヘッダーの下に1ピクセルの実線を設定 */
@@ -107,27 +114,27 @@ label {
    font-weight: bold; /* ロゴのテキストを太字に設定 */
    font-size: 20px;
    color: #777777; /* ロゴの色を設定 */
+   text-decoration: none;
  }
  
   /* グローバルナビゲーション */
 #gnavi {
    float: right; /* グローバルナビゲーション部分を右寄せで設定 */
-   margin: 12px 0 0 0; /* 上部に12ピクセルの余白を設定 */
    text-align: right; /* コンテンツの中身を右寄せで設定 */
  }
 
 #gnavi ul{
    clear: both; /* 回り込みを解除する際に使用しdiv要素が重ならないように設定 */
+   list-style:none;
  }
 
 #gnavi li {
    padding: 0 0 0 20px; /* 左に20ピクセルの余白を設定 */
    float: left; /* リストを左寄せで横並びになるよう設定 */
  }
- 
+
  /* メインパネル */
 #main_panel {
    padding: 80px 0 0 0; /* メインパネル上部に80ピクセルの余白を設定 */
    height: auto;  /* メインパネルの高さを400pxに設定 */
  }
- 
